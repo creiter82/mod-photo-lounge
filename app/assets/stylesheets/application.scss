@@ -1,4 +1,5 @@
 @import "bootstrap";
+@import "nivo";
 
 /* Show it is fixed to the top */
 body {
@@ -32,4 +33,16 @@ body {
       color: #333;
     }
   }
+}
+
+// Slider
+
+// .nivoSlider {
+//   position: relative;
+//   width: 100%
+//   height: auto;
+// }
+
+.theme-dark {
+  margin: 40px 0;
 }

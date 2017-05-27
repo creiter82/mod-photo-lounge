@@ -39,10 +39,15 @@ body {
 
 // .nivoSlider {
 //   position: relative;
-//   width: 100%
+//   width: 100%;
 //   height: auto;
 // }
 
 .theme-dark {
   margin: 40px 0;
+  border: 2px solid #ececec;
+  border-radius: 4px;
+  .nivoSlider {
+    margin-bottom: 0;
+  }
 }

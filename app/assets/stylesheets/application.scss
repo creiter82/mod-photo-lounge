@@ -5,11 +5,13 @@
 body {
   // min-height: 50rem;
   padding-top: 7rem;
+  font-family: 'Alegreya Sans', sans-serif;
 }
 
 // Navbar
 
 .navbar {
+  font-family: 'Alegreya Sans SC', sans-serif;
   background: rgba(248, 248, 248, 0.9);
   padding: 0 1rem;
   button.navbar-toggler.navbar-toggler-right {
@@ -23,7 +25,7 @@ body {
 }
 
 .navbar-light {
-  font-size: 18px;
+  font-size: 20px;
   .navbar-brand {
     padding: 0;
   }
@@ -45,7 +47,7 @@ body {
 
 .theme-dark {
   margin: 40px 0;
-  border: 2px solid #ececec;
+  // border: 2px solid #ececec;
   border-radius: 4px;
   .nivoSlider {
     margin-bottom: 0;
@@ -90,3 +92,38 @@ body {
     background-image: url(slider/next-hover.png);
   }
 }
+
+@media (max-width: 991px) {
+  .theme-dark a.nivo-prevNav {
+    top: 100px;
+  }
+
+  .theme-dark a.nivo-nextNav {
+    top: 100px; 
+  }
+}
+
+@media (max-width: 767px) {
+  .theme-dark a.nivo-prevNav {
+    top: 60px;
+  }
+
+  .theme-dark a.nivo-nextNav {
+    top: 60px;
+  }
+}
+
+@media (max-width: 575px) {
+  .theme-dark a.nivo-prevNav {
+    top: 100px;
+  }
+
+  .theme-dark a.nivo-nextNav {
+    top: 100px; 
+  }
+}
+
+
+
+
+

@@ -15,7 +15,7 @@ $(document).on('turbolinks:load', function () {
   $('#slider').nivoSlider({
     animSpeed: 500,
     pauseTime: 2700,
-    directionNav: false,
+    directionNav: true,
     controlNav: false,
   });
 });

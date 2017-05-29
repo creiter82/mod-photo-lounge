@@ -229,6 +229,54 @@ body {
   } 
 }
 
+.card {
+  margin: 40px 0;
+  font-size: 18px;
+}
+
+.email {
+  margin-top: 40px;
+  p {
+    font-size: 20px;
+    strong {
+      font-size: 40px;
+    }
+  }
+}
+
+footer {
+  padding: 40px 0 10px 0;
+  span {
+    text-align: center;
+    [class^="fa fa-"] {
+      color: $gray-light;
+    } 
+    [class^="fa fa-"]+[class^="fa fa-"] {
+      margin-right: 30px;
+    }
+    [class^="fa fa-instagram"] {
+      &:hover {
+        color: #3f729b;
+      }
+    }
+    [class^="fa fa-facebook-square"] {
+      &:hover {
+        color: #3B5998;
+      }
+    }
+    [class^="fa fa-tumblr-square"] {
+      &:hover {
+        color: #00225F;
+      }
+    }
+    [class^="fa fa-twitter-square"] {
+      &:hover {
+        color: #4099FF;
+      }
+    }
+  }
+}
+
 
 
 

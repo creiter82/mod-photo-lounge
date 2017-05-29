@@ -1,2 +1,77 @@
-<h1>Pages#contact</h1>
-<p>Find me in app/views/pages/contact.html.erb</p>
+<div class="container">
+  <div class="row">
+    <div class="col-md-8">
+      <div class="card">
+        <div class="card-block">
+          <h1 class="card-title">Contact Mod Photo Lounge</h1>
+          <h6 class="card-subtitle mb-2 text-muted">Please complete the form below so we can answer your questions quickly!</h6>
+          <%= form_for('#') do |f| %>
+
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <%= f.label :name %>
+                  <%= f.text_field :name, autofocus: true, class: 'form-control' %>
+                </div>
+              </div>  
+
+              <div class="col-md-6">
+                <div class="form-group">
+                  <%= f.label :email %>
+                  <%= f.email_field :email, placeholder: 'hello@example.com', class: 'form-control' %>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <%= f.label :phone %>
+                  <%= f.telephone_field :phone, class: 'form-control' %>
+                </div>
+              </div>  
+
+              <div class="col-md-6">
+                <div class="form-group">
+                  <%= f.label :date, 'Event Date' %>
+                  <%= f.date_field :date, class: 'form-control' %>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <%= f.label :event_type %>
+                  <%= f.select :event_type, options_for_select(['Wedding', 'Corporate Event', 'Graduation Party', 'Birthday Party']), class: 'form-control' %>
+                </div>
+              </div>
+            </div>  
+
+            <div class="form-group">
+              <%= f.label :question, 'Questions?' %>
+              <%= f.text_area :question, rows: '8', class: 'form-control' %>
+            </div>
+
+            <div class="form-group">
+              <%= f.submit 'Send Message', class: "btn btn-primary" %> |
+              <%= link_to 'Back', :back %>
+            </div>
+
+          <% end %>  
+
+        </div>
+      </div>
+    </div>  
+
+    <div class="col-md-4">
+      <div class="email text-center">
+        <p><a href="tel:+303-898-9070">Call 303.898.9070</a></p>
+        <p><strong>OR</strong></p>
+        <p>Email <a href="mailto:jeanelle@modphotolounge.com?Subject=Hello%20I've%20Got%20A%20Photo%20Lounge%20Question" target="_top">jeanelle@modphotolounge.com</a></p>
+      </div>
+
+    </div>
+
+  </div>    
+</div>

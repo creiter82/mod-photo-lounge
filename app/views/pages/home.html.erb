@@ -1,13 +1,118 @@
-<div class="container">
+<!-- <div class="container"> -->
   <h1 class="text-center">Premier Photo Booth Rental in Denver, <small>With a Twist</small></h1>
 
-  <div class="col-md-10 offset-md-1">
+  <div class="col-lg-10 offset-lg-1 hidden-md-down slider">
+
     <div class="theme-dark">
       <%= nivo_slider id: "slider" do %>
-        <%= image_tag('slide1.png') %>
-        <%= image_tag('slide2.jpg') %>
+        <%= image_tag('home/slide1.png') %>
+        <%= image_tag('home/slide2.jpg') %>
       <% end %>
-    </div>  
+    </div> 
   </div>
 
-</div>  
+  <div class="newsletter">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+
+        <!-- Begin MailChimp Signup Form -->
+        <div id="mc_embed_signup">
+          <form action="//modphotolounge.us8.list-manage.com/subscribe/post?u=92a5b3097ca1d391f09bfe47d&amp;id=1291d37bb3" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+              <label for="mce-EMAIL">Subscribe for MOD news and discounts</label>
+              <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+              <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+              <div style="position: absolute; left: -5000px;"><input type="text" name="b_92a5b3097ca1d391f09bfe47d_1291d37bb3" tabindex="-1" value=""></div>
+              <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-danger btn-md">
+          </form>
+        </div><!--End mc_embed_signup-->
+
+      </div>
+    </div>   
+  </div>
+
+  <div class="gallery">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-3 col-md-3 col-sm-6 text-center">
+          <%= image_tag 'home/FavoritesWeb24.jpg', width: '100%', alt: "Wedding Party Photo Booth Picture" %>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 text-center">
+          <%= image_tag 'home/FavoritesWeb20.jpg', width: '100%', alt: "Photo Booth Couple's Photo" %>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 text-center">
+          <%= image_tag 'home/FavoritesWeb15.jpg', width: '100%', alt: "Theme Photo From Photo Booth" %>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 text-center">
+          <%= image_tag 'home/FavoritesWeb35.jpg', width: '100%', alt: "Gag Photo Booth Picture" %>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="booth">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-12 col-sm-12">
+          <h1><%= fa_icon "camera-retro" %> Denver's Mod Photo Lounge</h1>
+          <h3>
+              Mod Photo Lounge specializes in luxury Photo Booth rentals for weddings, corporate events, parties and all around good times!
+          </h3>    
+          <p>
+            <strong>This is where the magic happens! <%= fa_icon "magic" %></i></strong>
+          </p>
+          <p>
+            Our Photo Lounges are a new twist on the old Photo Booth experience.<br>
+            Gone are the days of trying to pack a bunch of friends in a claustrophobic booth.
+          </p>
+          <p>
+            <strong>Mod Photo Lounges are scalable without any extra setup! <%= fa_icon "user" %>  <%= fa_icon "exchange" %> <%= fa_icon "users" %></strong>
+          </p>
+          <p>
+            Unlike traditional photo booths in Denver, Mod's lounges have tons of elbow room.<br>
+            So keep it spacious or pile 'em in, either way you'll be pleased by the photo quality.
+          </p>
+          <p>
+            <strong>The photo booth for any occasion! <%= fa_icon "birthday-cake" %></strong>
+          </p>
+          <p>
+            Weddings, birthdays, corporate events, parties, and red carpet affairs are always more fun with a Mod Photo Lounge.  Think of a photo booth as a "photo guest book", capturing all your wedding guest's excitement.
+          </p>
+        </div>
+        <div class="col-lg-4 col-md-4 hidden-md-down">    
+            <%= image_tag 'home/photo-booth.png', width: '80%', class: 'float-right', alt: 'Camera Stand For Photo Booth Denver' %>
+        </div>    
+      </div>
+    </div>
+  </div>
+
+  <div id="info">
+    <div class="container"> 
+      <h2 class="text-center"><%= fa_icon "picture-o" %> The Photo Lounge in Action</h2>
+      <div class="row">
+          <div class="col-lg-6">
+            <p>
+              <strong>Share away Denver! <%= fa_icon "thumbs-o-up" %></strong>
+            </p>
+            <p>
+              Forgot your phone? No worries, social media is already baked into the lounges.  All you have to do is share your awesome photos right from the touch screen in the photo booth.
+            </p>
+          </div>
+          <div class="col-lg-6">  
+            <p>
+              <strong>Branded Photo Lounge...</strong>
+            </p>
+            <p>
+              <%= fa_icon "check-square-o" %> You can check that box.  Mod Photo Lounges can do that too!
+            </p>
+            <p>You supply the logos and we'll get you a custom backdrop<br>
+                It'll make your event a red carpet affair or at least seem like one.</p>
+            <p>For a first class experience, the touchscreen in the lounge can be branded as well.</p>    
+            <p>
+              Check out the <%= link_to 'pricing', pricing_path %> page for more info on custom branding.
+            </p>
+          </div>      
+      </div>    
+    </div>
+  </div>
+
+<!-- </div>   -->

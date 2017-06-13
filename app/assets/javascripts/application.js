@@ -14,6 +14,7 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require nivo
+//= require bootstrap-datepicker
 //= require_tree .
 //= require bootstrap-sprockets
 

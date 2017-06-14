@@ -3,7 +3,27 @@
     <div class="card-block">
       <h1 class="card-title">Contact Mod Photo Lounge</h1>
       <h6 class="card-subtitle mb-2 text-muted">Please complete the form below so we can answer your questions quickly!</h6>
-      <%= form_for('#') do |f| %>
+
+      <!-- <div>
+        <%# flash.each do |key, value| %>
+          <div>
+            <a href="#" data-dismiss="alert">×</a>
+              <%#= value %>
+          </div>
+        <%# end %>
+      </div> -->
+
+      <% if @contact.errors.any? %>
+        <div class="alert alert-danger">
+          <ul>
+          <% @contact.errors.full_messages.each do |message| %>
+            <li><%= message %></li>
+          <% end %>
+          </ul>
+        </div>
+      <% end %>
+
+      <%= form_for(@contact) do |f| %>
 
         <div class="row">
           <div class="col-md-6">
@@ -47,13 +67,16 @@
         </div>  
 
         <div class="form-group">
-          <%= f.label :question, 'Questions?' %>
-          <%= f.text_area :question, rows: '8', class: 'form-control' %>
+          <%= f.label :message, 'Questions?' %>
+          <%= f.text_area :message, rows: '8', class: 'form-control' %>
+        </div>
+
+        <div class= "hidden">
+          <%= f.text_field :nickname, :hint => 'Leave this field blank!' %>
         </div>
 
         <div class="form-group">
-          <%= f.submit 'Send Message', class: "btn btn-primary" %> |
-          <%= link_to 'Back', :back %>
+          <%= f.submit 'Send Message', class: "btn btn-primary" %>
         </div>
 
       <% end %>  

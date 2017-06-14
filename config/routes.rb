@@ -3,7 +3,7 @@ Rails.application.routes.draw do
 
   get 'pricing', to: 'pages#pricing'
 
-  get 'contact', to: 'pages#contact'
+  resources "contacts", path: "contact", only: [:index, :create]
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

@@ -4,7 +4,4 @@ class PagesController < ApplicationController
 
   def pricing
   end
-
-  def contact
-  end
 end

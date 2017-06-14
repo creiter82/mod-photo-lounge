@@ -1,2 +1,100 @@
-<h1>Pages#pricing</h1>
-<p>Find me in app/views/pages/pricing.html.erb</p>
+<div class="container"> 
+    <div id="header">
+        <h1>Denver's Mod Photo Lounge Rental Pricing</h1>
+        <p>All photo booth rentals include; 1 attendant, custom personalization of photo prints, fun props, unlimited single 4x6 prints or 2x6 strips, digital copy, and an on-line photo gallery.</p>
+        <%= link_to 'Client Agreement Form', '#', class: 'btn btn-danger btn-lg' %>
+    </div>    
+</div>    
+
+<div id="table">
+    <div class="container">
+        <div class="row"> 
+            <div class="col-md-4 col-sm-4 col-xs-12" id="col-slv">
+                <!-- <img src="imgs/silver-package.png" style="width:75%;"> -->
+                <h2><%= fa_icon "star" %><br>
+                    Silver Package</h2>
+                <h3>$650</h3>
+                <hr>
+                <p>Includes:</p>
+                <ul class="list-group">
+                    <li class="list-group-item">Photo Lounge for 3 Hours</li>
+                    <li class="list-group-item">Unlimited Single 4x6 Prints or 2x6 Strips</li>
+                    <li class="list-group-item">Personalized Logo<sup><i class="fa fa-asterisk"></i></sup>/Graphic </li>
+                </ul>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-12" id="col-gld">
+                <!-- <img src="imgs/gold-package.png" style="width:75%;"> -->
+                <h2><%= fa_icon "star" %> <%= fa_icon "star" %><br>
+                    Gold Package</h2>
+                <h3>$850</h3>
+                <hr>
+                <p>Includes:</p>
+                <ul class="list-group">
+                    <li class="list-group-item">Photo Lounge for 4 Hours</li>
+                    <li class="list-group-item">Unlimited Double 4x6 Prints or 2x6 Strips</li>
+                    <li class="list-group-item">Deluxe Scrapbook</li>
+                    <li class="list-group-item">Personalized Logo<sup><i class="fa fa-asterisk"></i></sup>/Graphic </li>
+                    <li class="list-group-item">1 Hour of Idle Time</li>
+                </ul>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-12" id="col-plat">
+                <h2><%= fa_icon "star" %> <%= fa_icon "star" %> <%= fa_icon "star" %><br>
+                    Platinum Package</h2>
+                <h3>$1125</h3>
+                <hr>
+                <p>Includes:</p>
+                <ul class="list-group">
+                    <li class="list-group-item">Photo Lounge for 5 Hours</li>
+                    <li class="list-group-item">Unlimited Double 4x6 Prints or 2x6 Strips</li>
+                    <li class="list-group-item">Social Media Station</li>
+                    <li class="list-group-item">Deluxe Scrapbook</li>
+                    <li class="list-group-item">Personalized Logo<sup><i class="fa fa-asterisk"></i></sup>/Graphic </li>
+                    <li class="list-group-item">1 Hour of Idle Time</li>
+                </ul>
+            </div>    
+        </div> 
+        <div class="row">
+            <p><sup><i class="fa fa-asterisk"></i></sup> Client supplied logo. We are fun enhancers not graphic designers.</p> 
+        </div>   
+    </div>    
+</div>
+
+<div id="options">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-4 col-xs-12">
+                <h2>OPTIONS</h2>
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <span class="float-right">$150/hr</span>
+                        Extra Hours
+                    </li>
+                    <li class="list-group-item">
+                        <span class="float-right">$75</span>
+                        Scrapbook Station
+                    </li>
+                    <li class="list-group-item">
+                        <span class="float-right">$125</span>
+                        Social Media Station
+                    </li>
+                    <li class="list-group-item">
+                        <span class="float-right">$25</span>
+                        Photo Sleeves
+                    </li>
+                    <li class="list-group-item">
+                        <span class="float-right">$1/mi</span>
+                        Travel > 50 miles<br/>
+                        <small>From 80104 Zipcode</small>
+                    </li>
+                    <li class="list-group-item">
+                        <span class="float-right">$50/hr</span>
+                        Idle Time
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-6 col-sm-8 offset-md-2">
+              <%= image_tag 'FavoritesWeb13.JPG', alt: "Couple in Photo Booth Denver with Custom Backdrop", class: 'img-thumbnail' %>
+            </div>
+        </div>
+    </div>
+</div>

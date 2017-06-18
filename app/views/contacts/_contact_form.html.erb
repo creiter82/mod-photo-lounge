@@ -58,10 +58,10 @@
         </div>
 
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-md-4">
             <div class="form-group">
               <%= f.label :event_type %>
-              <%= f.select :event_type, options_for_select(['Wedding', 'Corporate Event', 'Graduation Party', 'Birthday Party']), class: 'form-control' %>
+              <%= f.select :event_type, options_for_select(['Wedding', 'Corporate Event', 'Graduation Party', 'Birthday Party']), {}, {class: "form-control"} %>
             </div>
           </div>
         </div>  

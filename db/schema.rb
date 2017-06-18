@@ -10,10 +10,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170616120902) do
+ActiveRecord::Schema.define(version: 20170618022853) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "events", force: :cascade do |t|
+    t.string   "title"
+    t.text     "main_image"
+    t.json     "event_photos"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
+    t.string   "slug"
+    t.index ["slug"], name: "index_events_on_slug", unique: true, using: :btree
+  end
 
   create_table "friendly_id_slugs", force: :cascade do |t|
     t.string   "slug",                      null: false
@@ -25,16 +35,6 @@ ActiveRecord::Schema.define(version: 20170616120902) do
     t.index ["slug", "sluggable_type"], name: "index_friendly_id_slugs_on_slug_and_sluggable_type", using: :btree
     t.index ["sluggable_id"], name: "index_friendly_id_slugs_on_sluggable_id", using: :btree
     t.index ["sluggable_type"], name: "index_friendly_id_slugs_on_sluggable_type", using: :btree
-  end
-
-  create_table "photos", force: :cascade do |t|
-    t.string   "title"
-    t.text     "main_image"
-    t.json     "event_photos"
-    t.datetime "created_at",   null: false
-    t.datetime "updated_at",   null: false
-    t.string   "slug"
-    t.index ["slug"], name: "index_photos_on_slug", unique: true, using: :btree
   end
 
 end

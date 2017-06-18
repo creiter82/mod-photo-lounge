@@ -1,0 +1,15 @@
+<div class="container">
+  <h1>Photo Gallery</h1>
+
+  <div class="row">
+    <% @events.each do |event| %>
+      <div class="col-md-4 text-center">
+        <%= image_tag event.main_image, width: '100%' %>  
+        <h3><%= event.title %></h3>
+      </div>  
+    <% end %>
+  </div>    
+
+  <%= link_to 'New Event', new_event_path, class: 'btn btn-primary' %>
+
+</div>  

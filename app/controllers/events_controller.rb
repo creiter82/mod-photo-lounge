@@ -17,7 +17,7 @@ class EventsController < ApplicationController
 
     respond_to do |format|
       if @event.save
-        format.html { redirect_to events_path, notice: "#{@event.title} was successfully created." }
+        format.html { redirect_to @event, notice: "#{@event.title} was successfully created." }
       else
         format.html { render :new }
       end
@@ -46,7 +46,7 @@ class EventsController < ApplicationController
     end
 
     def event_params
-      params.require(:event).permit(:title, :main_image, {event_images: []})
+      params.require(:event).permit(:title, :main_image, {event_photos: []})
     end
 
 end

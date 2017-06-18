@@ -12,14 +12,19 @@
   <div class="row">
     <div class="col-md-6">
       <div class="form-group">
-        <%= f.label :main_image %>
-        <%= f.file_field :main_image %>
+        <label class="btn btn-success">
+          Upload main Image <%= f.file_field :main_image, style: 'display:none;' %>
+        </label>
       </div>
     </div>
+  </div>
+
+  <div class="row">
     <div class="col-md-6">
       <div class="form-group">
-        <%= f.label :event_images %>
-        <%= f.file_field :event_images, multiple: true %>
+        <label class="btn btn-success">
+          Upload Event Photos <%= f.file_field :event_images, multiple: true, style: 'display:none;' %>
+        </label>
       </div>
     </div>
   </div>   
